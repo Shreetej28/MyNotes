@@ -7,44 +7,47 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background:#c6d4d5;
-  background-image: url("https://www.transparenttextures.com/patterns/gray-sand.png");
-  padding: 0 16px;
+  background:#f8f8f8;
+  /* padding: 0 16px; */
 }
 
 header {
   background:linear-gradient(170deg, #586667, #114f52);
-  margin: auto -16px;
+  width: 100%;
+  /* margin: auto -16px; */
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
   color: #fff;
-  font-family: "McLaren", cursive;
-  font-weight: 200;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
 }
 
 footer {
   position: absolute;
-  text-align: center;
+  left: 0;
   bottom: 0;
+  text-align: center;
   width: 100%;
   height: 2.5rem;
 }
 
 footer p {
+  
   color: #524b4b;
 }
 .note {
   background: #fff;
   border-radius: 7px;
-  /* box-shadow: 0 2px 5px #ccc; */
+  box-shadow: 0 2px 5px #ccc;
   padding: 10px;
   width: 240px;
   margin: 16px;
   float: left;
 }
+
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
@@ -103,4 +106,27 @@ form button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+::placeholder{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width:500px)  {
+
+  form{
+    margin-top: 50px;
+    width: 300px;
+  }
+  header{
+    width: 100%;
+  }
+  .note{
+    width: 80%;
+    height: 80%;
+  }
+  .note p{
+    font-size: 0.9rem;
+  } 
 }
